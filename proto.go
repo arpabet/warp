@@ -6,7 +6,7 @@ import (
 
 const RPCType = "rpc"
 
-// --- Types shared with wclient (legacy lookup + presence + WS) ---
+// --- Types shared with warp_client (legacy lookup + presence + WS) ---
 
 type WMsg struct {
 	Type    string          `json:"tp" msgpack:"tp"`                         // "rpc"
@@ -27,7 +27,7 @@ const StartOpcode = "start"
 const ValueOpcode = "value"
 const EndOpcode = "end"
 
-// RPCMetadata is the communication metadata with the wserver only
+// RPCMetadata is the communication metadata with the warp_server only
 type RPCMetadata struct {
 	Op           string `json:"op" msgpack:"op"` // "call", "res", "err", "cancel", "getstream", "putstream", "bistream", "start", "value", "end"
 	Method       string `json:"method" msgpack:"method"`

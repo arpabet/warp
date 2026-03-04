@@ -11,12 +11,12 @@ import (
 // Transport abstraction
 // ─────────────────────────────────────────────────────────────────────────────
 
-// Transport is a factory for wclient connections and/or servers.
+// Transport is a factory for warp_client connections and/or servers.
 type Transport interface {
-	// Dial creates a wclient connection to a remote endpoint (e.g., ws://host:port/path).
+	// Dial creates a warp_client connection to a remote endpoint (e.g., ws://host:port/path).
 	Dial(ctx context.Context, endpoint string, opts ...DialOption) (Connection, error)
 
-	// Listen starts a wserver listener at a local endpoint (e.g., :8080, ws path).
+	// Listen starts a warp_server listener at a local endpoint (e.g., :8080, ws path).
 	// The returned Listener manages lifecycle; incoming connections will be delivered
 	// to the provided Acceptor.
 	Listen(ctx context.Context, endpoint string, acceptor Acceptor, opts ...ListenOption) (Listener, error)
@@ -123,7 +123,7 @@ type Acceptor interface {
 	OnAccept(conn Connection)
 }
 
-// Listener represents a running wserver-side warp listener.
+// Listener represents a running warp_server-side warp listener.
 type Listener interface {
 	// Addr returns the bound address/endpoint.
 	Addr() string
