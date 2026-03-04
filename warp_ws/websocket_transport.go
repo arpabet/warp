@@ -4,6 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/arpabet/warp"
+	"github.com/arpabet/warp/warp_io"
 	"net"
 	"net/http"
 	"net/url"
@@ -11,8 +13,6 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
-	"warp"
-	"warp/warp_io"
 
 	"github.com/gorilla/websocket"
 )

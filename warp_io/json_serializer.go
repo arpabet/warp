@@ -2,7 +2,7 @@ package warp_io
 
 import (
 	"encoding/json"
-	"warp"
+	"github.com/arpabet/warp"
 
 	"github.com/gorilla/websocket"
 )

@@ -4,10 +4,10 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/arpabet/warp"
 	"log"
 	"sync"
 	"time"
-	"warp"
 
 	"go.uber.org/atomic"
 )

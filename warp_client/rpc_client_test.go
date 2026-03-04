@@ -4,9 +4,9 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	"github.com/arpabet/warp"
 	"testing"
 	"time"
-	"warp"
 )
 
 type sendFailConn struct {

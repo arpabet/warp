@@ -2,8 +2,8 @@ package warp_server
 
 import (
 	"fmt"
+	"github.com/arpabet/warp"
 	"sync"
-	"warp"
 
 	"go.uber.org/atomic"
 )

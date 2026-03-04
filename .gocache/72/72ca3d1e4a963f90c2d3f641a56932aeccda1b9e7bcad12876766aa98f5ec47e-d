@@ -1,3 +1,0 @@
-./json_serializer.go
-./msgpack_serializer.go
-./serializer_factory.go

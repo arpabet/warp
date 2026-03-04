@@ -1,7 +1,7 @@
 package warp_io
 
 import (
-	"warp"
+	"github.com/arpabet/warp"
 
 	"github.com/gorilla/websocket"
 	"github.com/vmihailenco/msgpack/v5"

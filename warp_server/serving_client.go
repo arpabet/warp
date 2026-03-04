@@ -3,9 +3,9 @@ package warp_server
 import (
 	"context"
 	"fmt"
+	"github.com/arpabet/warp"
 	"sync"
 	"time"
-	"warp"
 )
 
 var OutgoingQueueCap = 4096

@@ -6,9 +6,9 @@
 package warp_client
 
 import (
+	"github.com/arpabet/warp"
 	"log"
 	"time"
-	"warp"
 
 	"go.uber.org/atomic"
 )

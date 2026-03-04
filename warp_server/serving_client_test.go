@@ -2,10 +2,10 @@ package warp_server
 
 import (
 	"context"
+	"github.com/arpabet/warp"
 	"strings"
 	"sync"
 	"testing"
-	"warp"
 )
 
 type testConn struct {

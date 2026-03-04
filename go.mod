@@ -1,4 +1,4 @@
-module warp
+module github.com/arpabet/warp
 
 go 1.21
 

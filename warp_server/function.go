@@ -1,7 +1,7 @@
 package warp_server
 
 import (
-	"warp"
+	"github.com/arpabet/warp"
 )
 
 type functionType int
